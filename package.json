@@ -1,0 +1,27 @@
+{
+  "name": "proctree",
+  "version": "0.1.0",
+  "description": "who is using the machine, grouped by process tree — resident memory and CPU per tree on Windows and Linux, zero dependencies",
+  "type": "module",
+  "main": "lib/procs.js",
+  "bin": {
+    "proctree": "bin/proctree.js"
+  },
+  "scripts": {
+    "test": "node tests/run.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "process",
+    "process-tree",
+    "memory",
+    "cpu",
+    "monitor",
+    "windows",
+    "linux"
+  ],
+  "license": "MIT",
+  "author": "Aman Vicky"
+}
