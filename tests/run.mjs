@@ -34,7 +34,7 @@ setTimeout(() => process.exit(0), 8000);
 `);
 
 const busy = spawn(process.execPath,
-  ["-e", "const t = Date.now(); while (Date.now() - t < 6000);"], { stdio: "ignore" });
+  ["-e", "const t = Date.now(); while (Date.now() - t < 30000);"], { stdio: "ignore" });
 
 const parent = spawn(process.execPath, [path.join(HERE, "fixtures-child.mjs")]);
 const childPid = await new Promise((resolve) => {
